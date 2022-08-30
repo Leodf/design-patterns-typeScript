@@ -4,8 +4,8 @@ export class Receita implements Produto {
     constructor(
         private nome: string, 
         private valor: number, 
-        private dataCriacao: Date){}
-
+        private readonly dataCriacao: Date){}
+    
     alterarProduto(nome: string, valor: number) {
         this.nome = nome
         this.valor = valor

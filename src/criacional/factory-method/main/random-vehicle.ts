@@ -13,3 +13,4 @@ export function randomCar(): Vehicle {
     const cars = [car1, car2, bike]
     return cars[randomNumbers(cars.length)]
 }
+

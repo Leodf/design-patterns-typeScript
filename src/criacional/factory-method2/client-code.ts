@@ -1,10 +1,13 @@
-import { receitaFabrica } from "./produtoFactory/receitaFabrica";
+import { Receita } from "./produto/receita";
+import { ReceitaFabrica } from "./produtoFactory/receitaFabrica";
 
 const data = new Date()
-console.log(data.toLocaleDateString(), typeof(data.toLocaleDateString()))
 
 
-const receita1 = new receitaFabrica()
-receita1.criarProduto('Salario', 1200, data)
+const receitaFabrica = new ReceitaFabrica()
+
+const receita1 = receitaFabrica.criarProduto('Salario', 1200, data)
+const receita2 = receitaFabrica.criarProduto('Aluguel', 400, data)
 
 console.log(receita1)
+console.log(receita2)
