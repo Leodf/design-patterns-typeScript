@@ -1,10 +1,14 @@
 import { Produto } from "./produto"
 
-export class Receita implements Produto {
+export class Receita implements Produto {  
     constructor(
         private nome: string, 
         private valor: number, 
-        private readonly dataCriacao: Date){}
+        private readonly dataCriacao: string){
+            this.nome = nome
+            this.valor = valor
+            this.dataCriacao = dataCriacao
+        }
     
     alterarProduto(nome: string, valor: number) {
         this.nome = nome

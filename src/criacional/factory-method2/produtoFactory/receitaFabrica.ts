@@ -4,7 +4,7 @@ import { ProdutoFabrica } from "./produtoFabrica";
 
 
 export class ReceitaFabrica extends ProdutoFabrica {
-    criarProduto(nome: string, valor: number, dataCriacao: Date): Produto {
+    criarProduto(nome: string, valor: number, dataCriacao: string): Produto {
         return new Receita(nome, valor, dataCriacao)
     }
 }
