@@ -1,17 +1,17 @@
-import { Categoria, Produto } from "./produto"
 
-export class Receita implements Produto{  
+export class ObjFinanceiro {  
     constructor(
         private nome: string, 
         private valor: number, 
         private readonly dataCriacao: string,
-        private categoria: string){}
+        private precoMedio: number,
+        private qtdeCotas: number,
+        private tipoInvestimento: string){
+            this.nome = nome
+            this.valor = valor
+            this.dataCriacao = dataCriacao
+        }
     
-
-    setCategoria(categoria: string) {
-        return this.categoria = categoria
-    }
-
     alterarProduto(nome: string, valor: number) {
         this.nome = nome
         this.valor = valor
