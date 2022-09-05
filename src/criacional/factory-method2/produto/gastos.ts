@@ -20,3 +20,7 @@ export class Gastos {
         console.log(`Receita criada dia ${this.dataCriacao} apagada`)
     }
 }
+
+const gasto1 = new Gastos('aluguel', 1200, '06/08/2022')
+gasto1.excluirProduto()
+console.log(gasto1)

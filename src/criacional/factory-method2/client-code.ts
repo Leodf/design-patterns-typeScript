@@ -16,6 +16,7 @@ const gasto1 = gastoFabrica.criarProduto('Balada', 500, dataFormatada)
 const investimento1 = investimentoFabrica.criarProduto('PETROBRAS', 1800, dataFormatada, 15.25, 45, 'Ação')
 
 receita1.setCategoria('Salario Mensal')
+receita1.alterarProduto()
 console.log(receita1)
 console.log(receita2)
 console.log(gasto1)
